@@ -17,10 +17,7 @@ int id=db.getid()+1;
    var jqueryObj = $("#name");
    //获得节点的值
    var userName = jqueryObj.val();
-   if(user=="")
-   {
-   jqueryObj[1].focus();
-   }
+   
    //将文本框中的值发送给服务器的servlet
    $.get("/mercury/TestName?name=" + userName,null,callback);
   }
